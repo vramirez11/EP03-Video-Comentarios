@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='google', value='notranslate')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='img/favicon.ico', type='image/x-icon')
+    title!= titulo
+  body
+    header
+      #titulo #{usuario}
+    br
+    center
+        h1 Coldplay - Adventure Of A Lifetime (Official video)
+        iframe(width='560', height='315', src='https://www.youtube.com/embed/QtXby3twMmI', frameborder='0', allowfullscreen='')
+
+        input#nombreTarea.text-input--underbar(type='text', placeholder='Escriba su comentario', autocomplete='off')
+        input#guarda(type='button', value='Guardar Comentario')
+
+
+
+    div(align='center')
+        a(href='/logout') Cerrar sesión
+    link(rel='stylesheet', type='text/css', href='css/estilos.css')
